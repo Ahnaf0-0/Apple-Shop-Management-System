@@ -2,6 +2,7 @@ package project.subFrames;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import project.mainFrames.ShopFrame;
 abstract public  class CartFrame extends JFrame implements ActionListener {
     private JPanel panel;
     private JLabel note, picture;
@@ -44,11 +45,11 @@ abstract public  class CartFrame extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getActionCommand().equals(" BUY ")) {
-            Store s = new Store();
+            ShopFrame s = new Store();
             s.setVisible(true);
             this.setVisible(false);
         } else if (ae.getActionCommand().equals(" Add To Cart ")) {
-            Store s = new Store();
+            ShopFrame s = new Store();
             s.setVisible(true);
             this.setVisible(false);
         }

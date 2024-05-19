@@ -1,12 +1,8 @@
 package project.entity;
-
-import project.subFrames.Store;
-
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-//import classes.*;
-import java.awt.image.ImageFilter;
+import javax.swing.*;
+import project.subFrames.Store;
 
 public class AddManager extends JFrame {
 
