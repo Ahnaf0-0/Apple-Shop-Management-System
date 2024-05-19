@@ -6,9 +6,6 @@ public class Start {
     public static void main(String[] args) {
         MainFrame logIn = new Login();
         logIn.setVisible(true);
-
-//        AdminPanel admin = new AdminPanel();
-//           admin.setVisible(true);
     }
 }
 
