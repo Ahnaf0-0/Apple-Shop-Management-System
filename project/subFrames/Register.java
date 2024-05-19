@@ -1,10 +1,9 @@
 package project.subFrames;
+import java.awt.event.*;
+import javax.swing.*;
+import static javax.swing.JOptionPane.showMessageDialog;
 import project.entity.CustomerAccount;
 import project.mainFrames.MainFrame;
-
-import javax.swing.*;
-import java.awt.event.*;
-import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Register extends MainFrame {
     private JLabel name,phoneNumber,note1,note2,registerLabel;
