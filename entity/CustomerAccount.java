@@ -1,5 +1,5 @@
-package project.entity;
-import java.io.*;
+// package project.entity;
+ import java.io.*;
 
 public class CustomerAccount{
 
@@ -12,9 +12,7 @@ public class CustomerAccount{
     private FileWriter fwrite;
 
     public CustomerAccount (){
-
     }
-
     public CustomerAccount(String username,String userAppleId,String userpassword,String userphone){
 
         this.username=username;
@@ -28,35 +26,27 @@ public class CustomerAccount{
         return username;
     }
     public void setUsername(String username) {
-
         this.username = username;
     }
     public String getUserpassword() {
-
         return userpassword;
     }
     public void setUserpassword(String userpassword) {
-
         this.userpassword = userpassword;
     }
     public String getUserAppleId() {
-
         return userAppleId;
     }
     public void setUserAppleId(String userAppleId) {
-
         this.userAppleId = userAppleId;
     }
     public String getUserphone() {
-
         return userphone;
     }
     public void setUserphone(String userphone) {
-
         this.userphone = userphone;
     }
     public void addusraccount(){
-
         try{
             file = new File("project/data/data.txt");
 
@@ -64,13 +54,11 @@ public class CustomerAccount{
                 boolean newFile = file.createNewFile();
             }
             fwrite = new FileWriter(file,true);
-
             fwrite.write(getUsername()+"\t");
             fwrite.write(getUserphone()+"\t");
             fwrite.write(getUserAppleId()+"\t");
             fwrite.write(getUserpassword()+"\n");
             fwrite.flush();
-        
         }
         catch(IOException ioe){
             ioe.printStackTrace();
